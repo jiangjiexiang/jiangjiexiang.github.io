@@ -26,3 +26,7 @@ header{height:78px}.hero{padding-top:38px}.hero h1{font-size:clamp(36px,4.5vw,58
 .feature-video video{height:auto;max-height:none;aspect-ratio:1280/768}
 
 h1.brand{margin:0;font-size:21px;letter-spacing:2px;line-height:1.3}
+/* 首屏右侧证件照 */
+.hero-grid{display:grid;grid-template-columns:1fr 208px;gap:64px;align-items:start}
+.hero-photo{display:block;width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;object-position:center top;border:1px solid var(--line);background:#e9eae2}
+@media(max-width:720px){.hero-grid{grid-template-columns:1fr;gap:26px}.hero-photo{width:150px}}
