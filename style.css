@@ -123,3 +123,5 @@ dialog .close{position:absolute;right:8px;top:7px;width:30px;height:30px;border:
 .card[data-image]{cursor:zoom-in}
 dialog .dlg-img{display:block;max-width:min(1100px,92vw);max-height:84vh}
 dialog video[hidden],dialog .dlg-img[hidden]{display:none}
+/* 技能块为奇数时，最后一块通栏，避免右侧空洞 */
+.skills>div:last-child:nth-child(odd){grid-column:1/-1}

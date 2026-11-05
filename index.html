@@ -18,15 +18,30 @@
 
 <main class="content">
 <section id="about"><h2>关于我</h2>
-<p>自动化专业 2027 届本科生，2027 年 6 月毕业。做过的东西集中在一条线上：<b>把演示数据变成策略，再把策略真正跑到机器上</b>。在老板电器具身智能研究院、浙江大学 CAD&amp;CG 全国重点实验室和一家智能装备企业实习过，接触过双臂机器人、桌面机械臂 SO-101、UR5e 与四足机器人平台。</p>
+<p>自动化专业 2027 届本科生，2027 年 6 月毕业。做过的东西集中在一条线上：<b>把演示数据变成策略，再把策略真正跑到机器上</b>。在老板电器具身智能研究院、浙江大学 CAD&amp;CG 全国重点实验室和一家智能装备企业实习过，接触过双臂机器人、桌面机械臂 SO-101 与机身搭载机械臂的四足机器狗平台。</p>
 <p>具体做的事包括：演示数据采集与清洗，ACT / π0.5 等策略的训练与实机部署，多传感器接入与时间同步，机器人动作技能封装与上层任务编排，以及一个机器人数据标注与管理平台的完整开发。除此之外也写工具——ROS 与 ROS2 的驱动、可视化与中控台，这些代码都在 GitHub 上。</p>
 <p class="muted">求职方向：具身智能算法、机器人算法、机器人软件开发。</p>
 </section>
 
 <section id="experience"><h2>实习与科研经历</h2>
-<div class="entry"><div class="entry-head"><h3>杭州老板电器股份有限公司 · 具身智能研究院</h3><span class="when">2026.07 — 2026.11</span></div><p class="sub">算法实习生 · 杭州</p><ul><li>开发餐后清洁机器人的任务系统：将抓取、导航、放置封装为 MCP 技能接口，接入 RPent 完成长程任务编排。</li><li>基于双臂机器人开展 π0.5 餐盘抓取训练与实机部署，处理餐盘位姿变化与放置容错。</li><li>负责数据平台开发，支撑示教数据的上传、整理与训练前处理；参与机械臂饮品制作与柔顺擦除任务。</li></ul></div>
-<div class="entry"><div class="entry-head"><h3>浙江大学 CAD&amp;CG 全国重点实验室</h3><span class="when">2026.03 — 2026.07</span></div><p class="sub">实习生 · 杭州</p><ul><li>采集并清洗 300 组 SO-101 抓取放置演示数据，完成 ACT 策略训练与实机部署。</li><li>参与 VLA 模型复现与评测，以及多传感器接入、四足机器人控制链路调试。</li></ul></div>
-<div class="entry"><div class="entry-head"><h3>杭州集世迈新能源智能装备股份有限公司</h3><span class="when">2025.07 — 2026.01</span></div><p class="sub">算法实习生 · 杭州</p><ul><li>开发多传感器数据转换工具，参与机器人定位调试与地图数据验证。</li></ul></div>
+<div class="entry"><div class="entry-head"><h3>杭州老板电器股份有限公司 · 具身智能研究院</h3><span class="when">2026.07 — 2026.11</span></div><p class="sub">算法实习生 · 杭州</p><ul>
+<li>负责餐后清洁机器人任务系统开发：把抓取、导航、放置等动作技能封装为 MCP 工具，基于 RPent 具身智能体打通「抓盘子 — 自主导航 — 放置盘子」的完整流程。</li>
+<li>基于自变量双臂机器人完成 π0.5 视觉-语言-动作模型训练，实现餐盘抓取；并在 RLinf 框架下开展 PPO 强化学习训练，探索抓取放置任务的策略优化。</li>
+<li>负责具身智能数据采集平台整体开发：搭建任务分发、标注 / 审核人员指派与流程审批链路，支持按版本发布数据集；基于 SAM 3.1 实现 2D bbox 自动标注。</li>
+<li>基于 Rokae 机械臂与灵巧手开发咖啡饮品制作流程：抓取杯子后依次移动至制冰机接冰、咖啡机接取咖啡，完成机械臂运动与灵巧手动作联调。</li>
+<li>负责油烟机污渍擦除任务的机械臂控制开发，实现示教轨迹录制与回放，采用阻抗控制实现擦除过程中的柔顺控制。</li>
+</ul></div>
+<div class="entry"><div class="entry-head"><h3>浙江大学 CAD&amp;CG 全国重点实验室</h3><span class="when">2026.03 — 2026.07</span></div><p class="sub">实习生 · 杭州</p><ul>
+<li>基于 SO-101 采集清洗 300 组抓取放置演示数据，完成 ACT 训练与实机部署；完成 SmolVLA、π0.5、LingBot-VLA 的复现与评测。</li>
+<li>负责四足机器狗（机身搭载机械臂）平台的多传感器接入：激光雷达、RGB-D 与 IMU 的 ROS2 驱动、时间同步与外参标定；基于森云相机与 Jetson Orin 完成双目标定。</li>
+<li>基于 Cartographer 完成四足机器狗建图与 IMU 适配，解决户外场景下的定位漂移与地图重影问题。</li>
+<li>对接机器狗本体控制接口，实现速度与转向指令下发与运动状态反馈；开发远程遥控功能，搭建操控端与本体之间的指令下行与状态回传通道，支持底盘移动与机械臂关节的远程操作。</li>
+</ul></div>
+<div class="entry"><div class="entry-head"><h3>杭州集世迈新能源智能装备股份有限公司</h3><span class="when">2025.07 — 2026.01</span></div><p class="sub">算法实习生 · 杭州</p><ul>
+<li>开发 Apollo2rosbag 数据转换工具，将点云、IMU、图像等原始数据统一转换为 rosbag，支持建图与感知算法的离线回放与调试。</li>
+<li>基于 Livox Mid-360 与 FAST-LIO-SAM 构建自动驾驶叉车点云地图，负责重定位模块开发；针对匹配不稳定与定位漂移，优化 ICP 匹配流程、候选帧筛选与重定位触发逻辑。</li>
+<li>负责 OpenDRIVE 地图制作及 VTS 地图库测试，完成道路、车道与交叉口等要素校验，修复连接关系与拓扑异常。</li>
+</ul></div>
 </section>
 
 <section id="projects"><h2>项目</h2>
@@ -62,10 +77,11 @@
 </section>
 <section id="skills"><h2>技能</h2>
 <div class="skills">
-<div><h3>具身智能与模仿学习</h3><p>LeRobot、ACT、π0.5；演示数据采集与清洗、策略训练、实机部署与评测。</p></div>
-<div><h3>机器人系统开发</h3><p>ROS / ROS2、多传感器接入、TF 坐标变换、时间同步、rosbag 数据处理；rokae_ros2、x2-robot-viewer 等驱动与可视化工具。</p></div>
-<div><h3>工具与任务系统</h3><p>MCP 技能接口封装、RPent 任务编排、数据标注与管理平台开发（前端 + 后端 + 部署）。</p></div>
-<div><h3>仿真与导航</h3><p>Isaac Sim、MuJoCo；Cartographer 建图、AMCL 定位与导航流程调试。</p></div>
+<div><h3>具身智能与模仿学习</h3><p>LeRobot 工具链与 ACT 训练、评测与实机部署；VR 遥操作数据采集与清洗；π0.5 的 SFT 训练与部署；MCP 工具接口封装与 RPent 任务编排。</p></div>
+<div><h3>机器人开发与仿真</h3><p>ROS / ROS2 开发与调试；Isaac Sim、MuJoCo 仿真平台使用经验。</p></div>
+<div><h3>SLAM 与自主导航</h3><p>Cartographer、FAST-LIO-SAM 建图与重定位调试；AMCL 定位与 Nav2 导航流程；了解 DWB 局部规划、GMapping 与 LIO-SAM。</p></div>
+<div><h3>传感器与数据处理</h3><p>激光雷达、IMU、单目 / RGB-D 相机接入与标定；TF 坐标变换、时间戳同步、rosbag 录制回放、点云与图像数据处理。</p></div>
+<div><h3>开发效率工具</h3><p>熟练使用 Cursor、Codex 等 AI 编程工具辅助开发、问题排查与技术文档整理。</p></div>
 </div>
 </section>
 
