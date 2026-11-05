@@ -1,12 +1,71 @@
-<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="蒋杰翔个人介绍：2027届自动化本科生，具身智能与机器人开发方向，教育背景、专业技能、实习经历与实机演示。"><title>蒋杰翔 · 机器人与具身智能</title><link rel="stylesheet" href="style.css"></head><body>
-<header><h1 class="brand"><a href="#">蒋杰翔</a></h1><nav><a href="#about">关于我</a><a href="#experience">实习经历</a><a href="#work">实践演示</a><a href="#contact">联系 ↗</a></nav></header>
-<main><section class="hero"><div class="hero-grid"><div><div class="eyebrow"><i></i> 2027 届毕业生 · 自动化本科</div><div class="intro"><p class="personal-lead">求职方向：具身智能 / 机器人算法 / 机器人软件开发。<br>做过策略训练、实机部署和任务系统开发，<br>想继续做让机器人在真实场景里把活干完。</p><div class="hero-actions"><a class="button" href="assets/resume.pdf" target="_blank" rel="noopener">查看我的简历 <span>↗</span></a><a class="text-link" href="mailto:jiangjiexiang70@gmail.com">联系我 ↗</a></div></div></div><img class="hero-photo" src="assets/portrait.jpg" alt="蒋杰翔证件照" width="709" height="992"></div><div class="hero-meta"><span>杭州电子科技大学信息工程学院 · 自动化 · 2027.06 毕业</span><span>具身智能 / 模仿学习 / ROS</span></div></section>
-<section id="about" class="about"><div class="section-top"><span class="eyebrow">01 / 关于我</span><span>教育背景与专业能力</span></div><div class="about-grid"><div><h2>把策略<br>真正跑到机器上。</h2><p>我就读于杭州电子科技大学信息工程学院自动化专业，预计于 2027 年 6 月毕业。曾在老板电器、浙江大学 CAD&amp;CG 全国重点实验室及智能装备企业实习，接触双臂机器人、桌面机械臂与四足机器人等平台。</p><p>做的主要是四件事：演示数据采集与清洗，策略训练与实机部署，多传感器接入，动作技能与上层任务系统的联调。</p></div><div class="skill-list"><article><h3>具身智能与模仿学习</h3><p>LeRobot、ACT、π0.5；演示采集、数据清洗、策略训练与实机部署。</p></article><article><h3>机器人系统开发</h3><p>ROS / ROS2、多传感器接入、TF 坐标变换、时间同步与 rosbag 数据处理。</p></article><article><h3>工具与任务系统</h3><p>MCP 技能接口封装、RPent 任务编排、机器人数据标注与管理平台开发。</p></article><article><h3>仿真与导航实践</h3><p>Isaac Sim、MuJoCo；Cartographer 建图、AMCL 定位与导航流程调试。</p></article></div></div></section>
-<section id="experience" class="experience"><div><span class="eyebrow">02 / 实习经历</span><p>三段实习，做的都是机器人算法、系统联调与数据工具。从数据采集清洗、策略训练，到传感器接入和上层任务联调，都在真实设备上跑过。</p></div><div class="timeline"><article><time>2026.07 — 2026.11</time><h3>老板电器</h3><p>具身智能研究院 · 算法实习生</p><small>开发餐后清洁机器人 MCP 技能与任务编排系统，开展 π0.5 餐盘抓取训练及部署；负责数据平台开发，并参与机械臂饮品制作与柔顺擦除任务。</small></article><article><time>2026.03 — 2026.07</time><h3>浙江大学 CAD&CG 全国重点实验室</h3><p>实习生</p><small>采集清洗 300 组 SO-101 演示数据，完成 ACT 训练与部署；参与 VLA 模型复现、多传感器接入及四足机器人控制链路调试。</small></article><article><time>2025.07 — 2026.01</time><h3>杭州集世迈新能源智能装备股份有限公司</h3><p>算法实习生</p><small>开发多传感器数据转换工具，参与机器人定位调试与地图数据验证。</small></article></div></section>
-<section id="work" class="work"><div class="section-top"><span class="eyebrow">03 / 实践与演示</span><span>一个标注平台，三段实机录像</span></div><div class="project-heading"><h2>机器人数据<br><em>标注平台。</em></h2><div><span class="tag">个人负责 · 平台开发</span><h3>LabelVLA</h3><p>团队内部产品，标注平台整体由我开发。</p></div></div>
-<figure class="feature-video"><video controls playsinline preload="metadata" poster="assets/studio.jpg"><source src="assets/tutorial.mp4" type="video/mp4">浏览器不支持视频播放。</video><figcaption><span>01 — 平台操作演示：从建任务到版本发布</span><span>33 秒</span></figcaption></figure>
-<details class="platform-details"><summary>展开平台功能与操作演示 <span>＋</span></summary><div class="case-details"><div><span class="eyebrow">我负责的部分</span><h3>标注、审核、<br>版本发布。</h3><p>平台由我整体开发。围绕管理员、标注员、审核员三种角色的协作，把任务分配、人工标注、审核验收和数据集版本发布串成一条链路。</p></div><div class="features"><article><span>01</span><div><h4>多模态数据理解</h4><p>结合多路相机画面、动作曲线与原始消息浏览演示数据，支持任务片段划分与结构化描述。</p></div></article><article><span>02</span><div><h4>SAM 辅助标注</h4><p>接入分割与跟踪能力，辅助生成目标标注，并支持人工框选与修正。</p></div></article><article><span>03</span><div><h4>审核与版本管理</h4><p>串联任务分派、人工验收、程序质检和版本发布，保留数据产物与版本记录。</p></div></article></div></div>
-<div class="workflow"><span>预处理</span><b>→</b><span>人工标注</span><b>→</b><span>人工验收</span><b>→</b><span>程序质检</span><b>→</b><span>版本发布</span></div>
-<div class="gallery"><button class="screenshot" data-image="assets/task-detail.jpg" aria-label="放大任务流程"><img src="assets/task-detail.jpg" alt="任务详情中的五阶段工作流"><span>02 — 任务流程与节点状态 <b>↗</b></span></button><button class="screenshot" data-image="assets/versions.jpg" aria-label="放大版本管理"><img src="assets/versions.jpg" alt="数据集版本发布和下载记录"><span>03 — 数据集版本与发布记录 <b>↗</b></span></button><button class="screenshot wide" data-image="assets/studio.jpg" aria-label="放大查看标注工作台"><img src="assets/studio.jpg" alt="LabelVLA 标注工作台，包含三路相机、动作曲线、数据消息和结构化标注面板"><span>04 — 多视角机器人数据标注工作台 <b>放大 ↗</b></span></button></div><p class="media-note">截图与视频均使用教程示例数据。</p></details></section>
-<section class="other-work"><div class="section-top"><span class="eyebrow">机器人实机演示</span><span>策略训练与系统联调实践</span></div><article class="project-row"><span class="number">02</span><div><div class="tags">VLA · MCP · RPent</div><h3>餐后清洁机器人任务系统</h3><p>基于双臂机器人开展 π0.5 餐盘抓取训练与部署，将抓取、导航、放置封装为 MCP 工具，并接入 RPent 编排长程任务。</p></div><span class="row-note">策略训练<br>技能封装 · 任务编排</span></article><div class="robot-demo"><div><h4>自变量双臂机器人 · 实机演示</h4><p>餐后清洁任务中的双臂操作片段。</p></div><video controls playsinline preload="metadata" poster="assets/dual-arm.jpg"><source src="assets/dual-arm.mp4" type="video/mp4">浏览器不支持视频播放。</video></div><article class="project-row"><span class="number">03</span><div><div class="tags">LeRobot · ACT · SO-101</div><h3>机器人模仿学习实践</h3><p>采集清洗 300 组抓取放置演示数据，完成 ACT 训练与实机部署，开展 SmolVLA、π0.5 与 LingBot-VLA 的复现及评测实践。</p></div><span class="row-note">演示数据采集<br>训练 · 实机部署</span></article><div class="robot-demo portrait"><div><h4>SO-101 · 实机演示</h4><p>抓取放置任务的实机执行片段。</p></div><video controls playsinline preload="metadata" poster="assets/so101.jpg"><source src="assets/so101.mp4" type="video/mp4">浏览器不支持视频播放。</video></div><article class="project-row"><span class="number">04</span><div><div class="tags">SO-101 · 四足机器人 · 远程操控</div><h3>机械臂装到机器狗上</h3><p>把 SO-101 机械臂装在四足机器人背上，用一套遥控端同时控制机器狗行走和机械臂动作。</p></div><span class="row-note">结构安装<br>遥控联调</span></article><div class="robot-demo portrait"><div><h4>四足 + 机械臂 · 实机演示</h4><p>通过遥控端驱动机器狗行进、并操作背上机械臂的实机片段。</p></div><video controls playsinline preload="metadata" poster="assets/quadruped-arm.jpg"><source src="assets/quadruped-arm.mp4" type="video/mp4">浏览器不支持视频播放。</video></div></section>
-<section id="contact" class="contact"><span class="eyebrow">04 / 联系我</span><p>找具身智能、机器人算法与系统开发的岗位。</p><a href="mailto:jiangjiexiang70@gmail.com">jiangjiexiang70@gmail.com ↗</a><a class="resume" href="assets/resume.pdf" target="_blank" rel="noopener">查看完整简历 ↗</a></section></main><footer><span>蒋杰翔 · 个人介绍</span><span>2027 届 · 自动化本科</span><span>© 2026</span></footer><dialog id="lightbox"><button class="close" aria-label="关闭大图">关闭 ×</button><img alt="项目截图大图"></dialog><script src="app.js"></script></body></html>
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="蒋杰翔，自动化专业 2027 届本科生，方向为具身智能、机器人算法与机器人软件开发。"><title>蒋杰翔 · 机器人学习与系统开发</title><link rel="stylesheet" href="style.css"></head><body>
+<div class="masthead"><div class="masthead-in"><a class="site" href="./">蒋杰翔</a><nav><a href="#about">关于我</a><a href="#experience">经历</a><a href="#projects">项目</a><a href="#skills">技能</a></nav><a class="cv" href="assets/resume.pdf" target="_blank" rel="noopener">简历 ↗</a></div></div>
+<div class="layout">
+<aside class="sidebar">
+<img class="avatar" src="assets/portrait.jpg" alt="蒋杰翔" width="709" height="992">
+<h1 class="name">蒋杰翔</h1>
+<p class="role">自动化本科 · 2027 届<br>具身智能 / 机器人软件</p>
+<p class="status"><i></i>2027 届秋季校园招聘中</p>
+<ul class="meta">
+<li><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 1.5c-2.2 0-4 1.7-4 3.9C4 8.2 8 14.5 8 14.5s4-6.3 4-9.1c0-2.2-1.8-3.9-4-3.9Zm0 5.4a1.6 1.6 0 1 1 0-3.2 1.6 1.6 0 0 1 0 3.2Z"/></svg>杭州，中国</li>
+<li><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M5.5 14V1.5h5V14h-5Zm-4 0V4h3.2v10H1.5Zm10.8 0V6.5h3.2V14h-3.2Z"/></svg>杭州电子科技大学信息工程学院</li>
+<li><a href="mailto:jiangjiexiang70@gmail.com"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M1.5 3.5h13v9h-13v-9Zm1.2 1 5.3 3.9 5.3-3.9H2.7Z"/></svg>jiangjiexiang70@gmail.com</a></li>
+<li><a href="https://github.com/jiangjiexiang" target="_blank" rel="noopener"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 1a7 7 0 0 0-2.2 13.6c.3.1.5-.2.5-.4v-1.4c-2 .4-2.4-1-2.4-1-.3-.8-.8-1-.8-1-.7-.5 0-.5 0-.5.7 0 1.1.7 1.1.7.7 1.1 1.7.8 2.1.6.1-.5.3-.8.5-1-1.6-.2-3.2-.8-3.2-3.5 0-.8.3-1.4.7-1.9-.1-.2-.3-.9.1-1.9 0 0 .6-.2 2 .7a6.8 6.8 0 0 1 3.6 0c1.4-.9 2-.7 2-.7.4 1 .2 1.7.1 1.9.4.5.7 1.1.7 1.9 0 2.7-1.6 3.3-3.2 3.5.3.3.5.8.5 1.6v2.3c0 .2.2.5.5.4A7 7 0 0 0 8 1Z"/></svg>github.com/jiangjiexiang</a></li>
+<li><a href="assets/resume.pdf" target="_blank" rel="noopener"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3.5 1.5h9v13h-9v-13Zm1.8 2.3v1h5.4v-1H5.3Zm0 2.6v1h5.4v-1H5.3Zm0 2.6v1h3.6v-1H5.3Z"/></svg>简历 PDF</a></li>
+</ul>
+<h2 class="side-h">研究方向</h2>
+<ul class="chips"><li>机器人模仿学习</li><li>视觉语言动作模型</li><li>实机部署</li><li>ROS 系统与传感器接入</li></ul>
+</aside>
+
+<main class="content">
+<section id="about"><h2>关于我</h2>
+<p>自动化专业 2027 届本科生，2027 年 6 月毕业。做过的东西集中在一条线上：<b>把演示数据变成策略，再把策略真正跑到机器上</b>。在老板电器具身智能研究院、浙江大学 CAD&amp;CG 全国重点实验室和一家智能装备企业实习过，接触过双臂机器人、桌面机械臂 SO-101、UR5e 与四足机器人平台。</p>
+<p>具体做的事包括：演示数据采集与清洗，ACT / π0.5 等策略的训练与实机部署，多传感器接入与时间同步，机器人动作技能封装与上层任务编排，以及一个机器人数据标注与管理平台的完整开发。除此之外也写工具——ROS 与 ROS2 的驱动、可视化与中控台，这些代码都在 GitHub 上。</p>
+<p class="muted">求职方向：具身智能算法、机器人算法、机器人软件开发。</p>
+</section>
+
+<section id="experience"><h2>实习与科研经历</h2>
+<div class="entry"><div class="entry-head"><h3>杭州老板电器股份有限公司 · 具身智能研究院</h3><span class="when">2026.07 — 2026.11</span></div><p class="sub">算法实习生 · 杭州</p><ul><li>开发餐后清洁机器人的任务系统：将抓取、导航、放置封装为 MCP 技能接口，接入 RPent 完成长程任务编排。</li><li>基于双臂机器人开展 π0.5 餐盘抓取训练与实机部署，处理餐盘位姿变化与放置容错。</li><li>负责数据平台开发，支撑示教数据的上传、整理与训练前处理；参与机械臂饮品制作与柔顺擦除任务。</li></ul></div>
+<div class="entry"><div class="entry-head"><h3>浙江大学 CAD&amp;CG 全国重点实验室</h3><span class="when">2026.03 — 2026.07</span></div><p class="sub">实习生 · 杭州</p><ul><li>采集并清洗 300 组 SO-101 抓取放置演示数据，完成 ACT 策略训练与实机部署。</li><li>参与 VLA 模型复现与评测，以及多传感器接入、四足机器人控制链路调试。</li></ul></div>
+<div class="entry"><div class="entry-head"><h3>杭州集世迈新能源智能装备股份有限公司</h3><span class="when">2025.07 — 2026.01</span></div><p class="sub">算法实习生 · 杭州</p><ul><li>开发多传感器数据转换工具，参与机器人定位调试与地图数据验证。</li></ul></div>
+</section>
+
+<section id="projects"><h2>项目</h2>
+<p class="lead">四段和机器人直接相关的实践，每张卡片都配有实机录像或操作录屏。</p>
+<div class="grid">
+<figure class="card" data-video="assets/tutorial.mp4" data-title="LabelVLA · 平台操作演示">
+  <div class="cover"><img src="assets/studio.jpg" alt="LabelVLA 标注工作台"><span class="play">▶</span><span class="badge">2026 · 个人负责</span></div>
+  <figcaption><h3>LabelVLA · 机器人数据标注平台</h3><p>面向机器人示范数据的管理与标注平台，整体由我独立开发。把任务分派、人工标注、审核验收与数据集版本发布串成一条链路，支持多路相机、动作曲线与原始消息联合浏览。</p><div class="tags"><span>前后端开发</span><span>任务流水线</span><span>SAM 辅助标注</span></div><a class="card-link" href="https://github.com/jiangjiexiang/labelvla" target="_blank" rel="noopener">代码 ↗</a></figcaption>
+</figure>
+<figure class="card" data-video="assets/dual-arm.mp4" data-title="餐后清洁机器人 · 双臂实机演示">
+  <div class="cover"><img src="assets/dual-arm.jpg" alt="双臂机器人实机画面"><span class="play">▶</span><span class="badge">2026 · 老板电器</span></div>
+  <figcaption><h3>餐后清洁机器人任务系统</h3><p>基于双臂机器人做 π0.5 餐盘抓取训练与部署，把抓取、导航、放置封装为可调用的技能，交给编排层组合成长程任务。</p><div class="tags"><span>π0.5</span><span>MCP</span><span>RPent</span></div></figcaption>
+</figure>
+<figure class="card" data-video="assets/so101.mp4" data-title="SO-101 · 抓取放置实机演示">
+  <div class="cover"><img src="assets/so101.jpg" alt="SO-101 机械臂实机画面"><span class="play">▶</span><span class="badge">2026 · 浙大 CAD&amp;CG</span></div>
+  <figcaption><h3>SO-101 模仿学习与实机部署</h3><p>从零采集 300 组抓取放置演示，完成清洗、训练到实机部署的完整流程，并参与 SmolVLA、π0.5 等模型的复现与评测。</p><div class="tags"><span>LeRobot</span><span>ACT</span><span>SO-101</span></div><a class="card-link" href="https://github.com/jiangjiexiang/so101_hardware_cpp" target="_blank" rel="noopener">代码 ↗</a></figcaption>
+</figure>
+<figure class="card" data-video="assets/quadruped-arm.mp4" data-title="四足机器人 + 机械臂 · 实机演示">
+  <div class="cover"><img src="assets/quadruped-arm.jpg" alt="四足机器人背负机械臂"><span class="play">▶</span><span class="badge">2026 · 硬件集成</span></div>
+  <figcaption><h3>四足机器人 + SO-101 机械臂</h3><p>把 SO-101 机械臂装到四足机器人背上，用一套遥控端同时驱动机器狗行走和机械臂动作，完成结构安装与整机联调。</p><div class="tags"><span>结构安装</span><span>遥控联调</span><span>走行 + 操作</span></div></figcaption>
+</figure>
+</div>
+</section>
+
+<section id="skills"><h2>技能</h2>
+<div class="skills">
+<div><h3>具身智能与模仿学习</h3><p>LeRobot、ACT、π0.5；演示数据采集与清洗、策略训练、实机部署与评测。</p></div>
+<div><h3>机器人系统开发</h3><p>ROS / ROS2、多传感器接入、TF 坐标变换、时间同步、rosbag 数据处理；rokae_ros2、x2-robot-viewer 等驱动与可视化工具。</p></div>
+<div><h3>工具与任务系统</h3><p>MCP 技能接口封装、RPent 任务编排、数据标注与管理平台开发（前端 + 后端 + 部署）。</p></div>
+<div><h3>仿真与导航</h3><p>Isaac Sim、MuJoCo；Cartographer 建图、AMCL 定位与导航流程调试。</p></div>
+</div>
+</section>
+
+<section id="contact"><h2>联系</h2>
+<p>2027 届秋招，找具身智能、机器人算法与机器人系统开发方向的工作。欢迎邮件联系，我通常当天回复。</p>
+<p class="links"><a href="mailto:jiangjiexiang70@gmail.com">jiangjiexiang70@gmail.com</a><a href="https://github.com/jiangjiexiang" target="_blank" rel="noopener">GitHub</a><a href="assets/resume.pdf" target="_blank" rel="noopener">简历 PDF</a></p>
+</section>
+</main>
+</div>
+<dialog id="player"><button class="close" aria-label="关闭">×</button><p class="dlg-title"></p><video controls playsinline preload="metadata"></video></dialog>
+<script src="app.js"></script></body></html>
