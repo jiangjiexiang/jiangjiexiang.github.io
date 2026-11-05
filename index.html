@@ -5,7 +5,6 @@
 <img class="avatar" src="assets/portrait.jpg" alt="蒋杰翔" width="709" height="992">
 <h1 class="name">蒋杰翔</h1>
 <p class="role">自动化本科 · 2027 届<br>具身智能 / 机器人软件</p>
-<p class="status"><i></i>2027 届秋季校园招聘中</p>
 <ul class="meta">
 <li><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 1.5c-2.2 0-4 1.7-4 3.9C4 8.2 8 14.5 8 14.5s4-6.3 4-9.1c0-2.2-1.8-3.9-4-3.9Zm0 5.4a1.6 1.6 0 1 1 0-3.2 1.6 1.6 0 0 1 0 3.2Z"/></svg>杭州，中国</li>
 <li><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M5.5 14V1.5h5V14h-5Zm-4 0V4h3.2v10H1.5Zm10.8 0V6.5h3.2V14h-3.2Z"/></svg>杭州电子科技大学信息工程学院</li>
@@ -34,24 +33,33 @@
 <p class="lead">四段和机器人直接相关的实践，每张卡片都配有实机录像或操作录屏。</p>
 <div class="grid">
 <figure class="card" data-video="assets/tutorial.mp4" data-title="LabelVLA · 平台操作演示">
-  <div class="cover"><img src="assets/studio.jpg" alt="LabelVLA 标注工作台"><span class="play">▶</span><span class="badge">2026 · 个人负责</span></div>
+  <div class="cover"><img src="assets/studio.jpg" alt="LabelVLA 标注工作台"><span class="play">▶</span></div>
   <figcaption><h3>LabelVLA · 机器人数据标注平台</h3><p>面向机器人示范数据的管理与标注平台，整体由我独立开发。把任务分派、人工标注、审核验收与数据集版本发布串成一条链路，支持多路相机、动作曲线与原始消息联合浏览。</p><div class="tags"><span>前后端开发</span><span>任务流水线</span><span>SAM 辅助标注</span></div><a class="card-link" href="https://github.com/jiangjiexiang/labelvla" target="_blank" rel="noopener">代码 ↗</a></figcaption>
 </figure>
 <figure class="card" data-video="assets/dual-arm.mp4" data-title="餐后清洁机器人 · 双臂实机演示">
-  <div class="cover"><img src="assets/dual-arm.jpg" alt="双臂机器人实机画面"><span class="play">▶</span><span class="badge">2026 · 老板电器</span></div>
+  <div class="cover"><img src="assets/dual-arm.jpg" alt="双臂机器人实机画面"><span class="play">▶</span></div>
   <figcaption><h3>餐后清洁机器人任务系统</h3><p>基于双臂机器人做 π0.5 餐盘抓取训练与部署，把抓取、导航、放置封装为可调用的技能，交给编排层组合成长程任务。</p><div class="tags"><span>π0.5</span><span>MCP</span><span>RPent</span></div></figcaption>
 </figure>
 <figure class="card" data-video="assets/so101.mp4" data-title="SO-101 · 抓取放置实机演示">
-  <div class="cover"><img src="assets/so101.jpg" alt="SO-101 机械臂实机画面"><span class="play">▶</span><span class="badge">2026 · 浙大 CAD&amp;CG</span></div>
+  <div class="cover"><img src="assets/so101.jpg" alt="SO-101 机械臂实机画面"><span class="play">▶</span></div>
   <figcaption><h3>SO-101 模仿学习与实机部署</h3><p>从零采集 300 组抓取放置演示，完成清洗、训练到实机部署的完整流程，并参与 SmolVLA、π0.5 等模型的复现与评测。</p><div class="tags"><span>LeRobot</span><span>ACT</span><span>SO-101</span></div><a class="card-link" href="https://github.com/jiangjiexiang/so101_hardware_cpp" target="_blank" rel="noopener">代码 ↗</a></figcaption>
 </figure>
 <figure class="card" data-video="assets/quadruped-arm.mp4" data-title="四足机器人 + 机械臂 · 实机演示">
-  <div class="cover"><img src="assets/quadruped-arm.jpg" alt="四足机器人背负机械臂"><span class="play">▶</span><span class="badge">2026 · 硬件集成</span></div>
+  <div class="cover"><img src="assets/quadruped-arm.jpg" alt="四足机器人背负机械臂"><span class="play">▶</span></div>
   <figcaption><h3>四足机器人 + SO-101 机械臂</h3><p>把 SO-101 机械臂装到四足机器人背上，用一套遥控端同时驱动机器狗行走和机械臂动作，完成结构安装与整机联调。</p><div class="tags"><span>结构安装</span><span>遥控联调</span><span>走行 + 操作</span></div></figcaption>
 </figure>
+<figure class="card wide" data-image="assets/rosvue.jpg" data-title="ROS 2 机器人 Web 中控台">
+  <div class="cover"><img src="assets/rosvue.jpg" alt="ROS 2 机器人中控台界面"></div>
+  <figcaption><h3>ROS 2 机器人 Web 中控台</h3><p>在浏览器里监控和操作 ROS 2 机器人：SLAM 栅格地图、摇杆遥控、电池与里程计状态、建图启停与地图保存。前端 Vue，后端接 Foxglove WebSocket，一条脚本同时起前后端。</p><div class="tags"><span>Vue</span><span>Foxglove WebSocket</span><span>SLAM 地图</span><span>遥操作</span></div><a class="card-link" href="https://github.com/jiangjiexiang/Ros_Vue" target="_blank" rel="noopener">代码 ↗</a></figcaption>
+</figure>
+</div>
+<div class="mini">
+<h3>其他开源项目</h3>
+<a href="https://github.com/jiangjiexiang/opendrive_web_tool" target="_blank" rel="noopener"><b>OpenDRIVE 地图工具</b><span>OpenDRIVE 地图的导入、编辑、导出与 VTS 规则校验，Vue 前端 + Node 后端 + libOpenDRIVE 解析桥接。</span><em>↗</em></a>
+<a href="https://github.com/jiangjiexiang/x2-robot-viewer" target="_blank" rel="noopener"><b>X2 机器人模型查看器</b><span>基于 URDF 的机器人模型与关节状态可视化，接 ROS 1 只读话题，用于现场核对机器人姿态。</span><em>↗</em></a>
+<a href="https://github.com/jiangjiexiang/rokae_ros2" target="_blank" rel="noopener"><b>Rokae 机械臂 ROS 2 包</b><span>Rokae xMate 系列机械臂的 ROS 2 驱动与调用封装。</span><em>↗</em></a>
 </div>
 </section>
-
 <section id="skills"><h2>技能</h2>
 <div class="skills">
 <div><h3>具身智能与模仿学习</h3><p>LeRobot、ACT、π0.5；演示数据采集与清洗、策略训练、实机部署与评测。</p></div>
@@ -62,10 +70,10 @@
 </section>
 
 <section id="contact"><h2>联系</h2>
-<p>2027 届秋招，找具身智能、机器人算法与机器人系统开发方向的工作。欢迎邮件联系，我通常当天回复。</p>
+<p>找具身智能、机器人算法与机器人系统开发方向的工作。欢迎邮件联系，我通常当天回复。</p>
 <p class="links"><a href="mailto:jiangjiexiang70@gmail.com">jiangjiexiang70@gmail.com</a><a href="https://github.com/jiangjiexiang" target="_blank" rel="noopener">GitHub</a><a href="assets/resume.pdf" target="_blank" rel="noopener">简历 PDF</a></p>
 </section>
 </main>
 </div>
-<dialog id="player"><button class="close" aria-label="关闭">×</button><p class="dlg-title"></p><video controls playsinline preload="metadata"></video></dialog>
+<dialog id="player"><button class="close" aria-label="关闭">×</button><p class="dlg-title"></p><video controls playsinline preload="metadata"></video><img class="dlg-img" alt="界面大图"></dialog>
 <script src="app.js"></script></body></html>
