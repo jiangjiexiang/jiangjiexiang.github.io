@@ -121,6 +121,14 @@ dialog .close{position:absolute;right:8px;top:7px;width:30px;height:30px;border:
 .card.wide .cover{background:#0d0b14}
 .card.wide .cover img{object-fit:contain}
 .card[data-image]{cursor:zoom-in}
+
+/* OpenDRIVE 卡：截图信息密度高，图区放宽、底色压深 */
+.card.wide.map{grid-template-columns:1.9fr 1fr}
+.card.wide.map .cover{min-height:300px;background:#0c0e14}
+@media(max-width:900px){
+  .card.wide.map{grid-template-columns:1fr}
+  .card.wide.map .cover{min-height:0;aspect-ratio:16/10}
+}
 dialog .dlg-img{display:block;max-width:min(1100px,92vw);max-height:84vh}
 dialog video[hidden],dialog .dlg-img[hidden]{display:none}
 /* 技能块为奇数时，最后一块通栏，避免右侧空洞 */
